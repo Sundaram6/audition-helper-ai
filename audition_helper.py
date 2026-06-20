@@ -100,6 +100,16 @@ audition_type = st.selectbox(
     ]
 )
 
+analysis_style = st.select_slider(
+    "Analysis Style",
+    options=[
+        "Strict",
+        "Balanced",
+        "Creative"
+    ],
+    value="Balanced"
+)
+
 
 analysis_depth = st.selectbox(
     "Analysis Depth",
